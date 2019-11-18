@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.hearder {
+				width: 700px;
+				height: 200px;
+				background-color: red;
+			}
+			.zhongjian {
+				width: 800px;
+				
+				/*height: 200px;*/
+				background-color: gold;
+				/*overflow: hidden;*/
+				
+			}
+			.son1 {
+				width: 300px;
+				height: 200px;
+				background-color: black;
+				float: left;
+			}
+			.son2 {
+				width: 400px;
+				height: 200px;
+				background-color: green;
+				float: left;
+			}
+			.jiewei {
+				width:800px ;
+				height: 500px;
+				background-color: blue;
+			}
+			.clearfix:after {
+				content: ".";
+				display: block;
+				visibility: hidden;
+				clear: both;
+				height: 0;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="hearder"></div>
+		<div class="zhongjian clearfix" >
+			<div class="son1"></div>
+			<div class="son2"></div>
+			<!--<div style="clear: both;"></div>-->
+		</div>
+		
+		<div class="jiewei"></div>
+	</body>
+</html>

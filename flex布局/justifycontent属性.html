@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#dd{
+				width: 1000px;
+				height: 400px;
+				/*padding: 0 30px;*/
+				border: 1px solid red;
+				display: flex;
+				margin: 100px auto;	
+				min-width: 30px;
+				/*flex-direction: column;*/
+				/*justify-content: space-between;*/
+				
+				/*align-items: flex-end;*/
+				/*设置超出部分是否换行*/
+				flex-wrap:nowrap;
+				/*justify-content: flex-end;*/
+				/*justify-content: flex-start;*/
+				/*align-items: center;*/
+						
+			}
+			#dd>div {
+				width: 200px;
+				height: 200px;
+			}
+			#dd>div:first-child {
+				/*width: 300px;*/
+				/*flex: 1;*/
+				background-color: gold;
+			}
+			#dd>div:nth-child(2) {
+				/*margin: 0 10px;
+				flex: 3;*/
+				background-color: red;				
+			}
+			#dd>div:last-child {
+				background-color: green;				
+				/*flex: 1;*/
+				}
+		</style>
+	</head>
+	<body>
+		<div id="dd">
+		<div class=""></div>
+		<div class=""></div>
+		<div class=""></div>
+		<div class=""></div>
+		<div class=""></div>
+		<div class=""></div>
+		</div>
+	</body>
+</html>

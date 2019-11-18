@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			div {
+				width: 400px;
+				height: 200px;
+				background-color: darkorange;
+				/*animation: go 3s;*/
+				animation: go 2s ease-in-out 0s 4 alternate;
+			}
+			@keyframes go{
+				0% {
+					transform: translate3d(0,0,0);					
+				}
+				25% {
+					transform: translate3d(400px,0,0);	
+					
+				}
+				50% {
+					transform: translate3d(400px,800px,0);	
+					
+				}
+				75% {
+					transform: translate3d(0,200px,0);	
+					
+				}
+				100% {
+					transform: translate3d(0,0,0);					
+				}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div>
+			
+		</div>
+	</body>
+</html>

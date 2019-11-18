@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#dd{
+				width: 800px;
+				height: 200px;
+				border: 1px solid red;
+				display: flex;
+				margin: 100px auto;	
+				min-width: 30px;		
+			}
+			#dd>div:first-child {
+				width: 300px;
+				/*flex: 1;*/
+				background-color: gold;
+			}
+			#dd>div:nth-child(2) {
+				margin: 0 5px;
+				flex: 3;
+				background-color: red;				
+			}
+			#dd>div:last-child {
+				background-color: green;				
+				flex: 1;
+				}
+		</style>
+	</head>
+	<body>
+		<div id="dd">
+		<div class=""></div>
+		<div class=""></div>
+		<div class=""></div>
+		</div>
+	</body>
+</html>

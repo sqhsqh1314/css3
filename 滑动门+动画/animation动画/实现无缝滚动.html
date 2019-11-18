@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#dd {
+				width: 1600PX;
+				height: 400PX;
+				margin: 100px auto;
+				overflow: hidden;
+			}
+			li {
+				list-style: none;
+				float: left;
+			}
+			#dd ul{
+				width: 200%;
+				animation: moving 5s linear infinite;
+			}
+			@keyframes moving{
+				from{
+					transform: translateX(0);
+				}
+				to{
+					transform: translateX(-1600px);
+				}
+			}
+			img {
+				
+				width: 400px;
+				height: 400px;
+			}
+			#dd:hover ul{
+				/*
+				 * 鼠标经过暂停动画
+				 */
+				animation-play-state: paused;
+				
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="dd">
+			<ul>
+			<li><img src="../img/1.jpeg"  /></li>
+			<li><img src="../img/car.jpg"  /></li>
+			<li><img src="../img/fang.jpg"  /></li>
+			<li><img src="../img/zheng.jpg" /></li>
+			<li><img src="../img/1.jpeg"  /></li>
+			<li><img src="../img/car.jpg"  /></li>
+			<li><img src="../img/fang.jpg"  /></li>
+			<li><img src="../img/zheng.jpg" /></li>
+		   </ul>			
+		</div>		
+	</body>
+</html>

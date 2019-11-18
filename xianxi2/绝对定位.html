@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			div:first-child {
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				background: red;
+				/*
+				 * 绝对定位是脱离文档流的
+				 */
+			}
+			div:last-child {
+				width: 200px;
+				height: 200px;
+				/*position: absolute;*/
+				background: gold;				
+			}			
+		</style>
+	</head>
+	<body>
+		<div></div>
+		<div></div>
+	</body>
+</html>

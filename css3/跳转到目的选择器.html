@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			div{
+				width: 300px;
+				height: 600px;
+				
+			}
+			div:nth-child(even){
+				background-color: red;
+				margin: 10px;
+			}
+			div:nth-child(odd){
+				background-color: green;
+			}
+			:target{
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="#div1">第一个div</a>
+		<a href="#div2">第二个div</a>
+		<a href="#div3">第三个div</a>
+		<div id="div1">
+			
+		</div>
+		<h1 id="div2">个人生活</h1>
+		<div >
+			
+			
+		</div>
+		<div id="div3">
+			
+		</div>
+		
+	</body>
+</html>
